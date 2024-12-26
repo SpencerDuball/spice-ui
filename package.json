@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "spice-ui",
+  "description": "A styled component library using ark-ui, pandacss, and radix colors to add some flavor to your site.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerDuball/spice-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpencerDuball/spice-ui/issues"
+  },
+  "homepage": "https://spice-ui.github.io",
+  "author": "Spencer Duball <spencerduball@gmail.com>",
+  "license": "MIT"
+}
