@@ -1,6 +1,7 @@
 import { defineTokens } from "@pandacss/dev";
 
 export const colors = defineTokens.colors({
+  transparent: { value: "transparent" },
   current: { value: "currentColor" },
   black: {
     DEFAULT: { value: "#000000" },
@@ -32,5 +33,4 @@ export const colors = defineTokens.colors({
     a11: { value: "rgba(255, 255, 255, 0.9)" },
     a12: { value: "rgba(255, 255, 255, 0.95)" },
   },
-  transparent: { value: "rgb(0 0 0 / 0)" },
 });

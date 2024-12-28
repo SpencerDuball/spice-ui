@@ -46,27 +46,29 @@ export const lineHeights = defineTokens.lineHeights({
   loose: { value: "2" },
 });
 
+const fallback = [
+  "ui-sans-serif",
+  "system-ui",
+  "-apple-system",
+  "BlinkMacSystemFont",
+  '"Segoe UI"',
+  "Roboto",
+  '"Helvetica Neue"',
+  "Arial",
+  '"Noto Sans"',
+  "sans-serif",
+  '"Apple Color Emoji"',
+  '"Segoe UI Emoji"',
+  '"Segoe UI Symbol"',
+  '"Noto Color Emoji"',
+];
+
 export const fonts = defineTokens.fonts({
-  sans: {
-    value: [
-      "ui-sans-serif",
-      "system-ui",
-      "-apple-system",
-      "BlinkMacSystemFont",
-      '"Segoe UI"',
-      "Roboto",
-      '"Helvetica Neue"',
-      "Arial",
-      '"Noto Sans"',
-      "sans-serif",
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-      '"Noto Color Emoji"',
-    ],
+  heading: {
+    value: ["Inter", ...fallback],
   },
-  serif: {
-    value: ["ui-serif", "Georgia", "Cambria", '"Times New Roman"', "Times", "serif"],
+  body: {
+    value: ["Inter", ...fallback],
   },
   mono: {
     value: [

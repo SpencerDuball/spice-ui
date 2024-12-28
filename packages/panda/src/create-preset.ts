@@ -1,14 +1,14 @@
 import { type SemanticTokens, definePreset } from "@pandacss/dev";
 import { type IColorPalette, colors } from "./utils/colors.js";
 import slate from "./colors/slate.js";
-import { conditions } from "./theme/conditions.js";
-import { globalCss } from "./theme/global-css.js";
+import { semanticTokens } from "./theme/semantic-tokens/index.js";
+import { tokens } from "./theme/tokens/index.js";
 import { breakpoints } from "./theme/breakpoints.js";
+import { conditions } from "./theme/conditions.js";
+import { containerSizes } from "./theme/containerSizes.js";
+import { globalCss } from "./theme/global-css.js";
 import { keyframes } from "./theme/keyframes.js";
 import { textStyles } from "./theme/text-styles.js";
-import { tokens } from "./theme/tokens/index.js";
-import { semanticTokens } from "./theme/semantic-tokens/index.js";
-import { containerSizes } from "./theme/containerSizes.js";
 
 export interface PresetOptions {
   colors: IColorPalette[];
